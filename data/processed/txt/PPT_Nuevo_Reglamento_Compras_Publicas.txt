@@ -1,0 +1,477 @@
+Nuevo Reglamento de
+Compras Públicas
+Unidad de Formación y Capacitación Usuaria
+Objetivo
+Comprender las nuevas disposiciones que
+incorpora el nuevo Reglamento de
+Compras Públicas en la gestión de las
+contrataciones en el Estado.
+Publicación del Reglamento de
+Compras
+El día 12 de diciembre de 2024, además de entrar en
+vigor nuevas disposiciones de la Ley de Compras N° 19.886,
+se publica en el Diario Oficial el DTO N° 661/2024 del
+Ministerio de Hacienda que aprueba el Reglamento de
+la Ley N° 19.886.
+En esta norma administrativa, se especifican aspectos de
+la Ley y se detalla la operatoria para gestión tanto de
+compradores como de proveedores.
+Fases de implementación
+Modernización Compras Públicas
+Publicación Nuevo Reglamento
+¿Qué incorpora el nuevo
+Reglamento de Compras?
+• Establece criterios de promoción de proveedores locales en
+Convenios Marco.
+• En Compra Ágil, aumenta los montos de 30 a 100 UTM y se establece
+la operatoria y requisitos para su uso.
+• Modifica las causales de Trato Directo o Contratación Excepcional
+Directa con Publicidad.
+• Establece ámbito de aplicación de Compra por Cotización.
+• Cambios en montos de Garantías.
+• Identifica a los participantes del proceso de compra y contratación,
+integrándolos a la nómina correspondiente en el Sistema de Información.
+• Enumera las inhabilidades para contratar con el Estado y pertenecer al
+Registro de Proveedores.
+• Limitación de conformación de UTP a empresas de menor tamaño y
+normativa frente inhabilidad de integrantes una vez formada la UTP.
+Cambios a partir del 12 de
+diciembre de 2024
+Ampliación de la cobertura del Sistema
+Entidades
+• Organismo de la Administración del Estado
+• Corporaciones Municipales
+• Fundaciones de la Presidencia
+• Corporaciones con participación de la Administración del Estado, que reciban asignaciones públicas sobre
+1.500 UTM, identificadas por D.S.
+• Congreso Nacional
+• Poder Judicial
+• CGR
+• Ministerio Público
+• TC, TDLC, TRICEL, Tribunales Electorales Regionales, Tribunales Ambientales.
+• SERVEL
+• CNTV
+Aplicación de todos los capítulos de la Ley
+• Corporaciones con participación de la Administración del Estado, que reciban asignaciones públicas inferior
+1.500 UTM.
+• Empresas del Estado.
+• Banco Central.
+Aplicación Cap. VII Probidad y Transparencia y adhesión voluntaria a Sistema de información.
+Personas jurídicas receptoras de fondos públicos, según ley N°19.862, respecto de tales fondos.
+Remisión al Reglamento
+Licitaciones de Obra Pública y de Concesiones de Obra Pública (MOP y MINVU)
+Aplicación Cap. VII Probidad y Transparencia y Sistema de información solo en etapa de licitación.
+Sección nuevos compradores
+Sección en www.chilecompra.cl
+1. Para nuevos compradores con información
+respecto al proceso de incorporación a la
+plataforma.
+2. Información proceso de inscripción para nuevos
+compradores:
+Material de apoyo:
+- Infografía interactiva
+- Guía de uso
+- Cápsulas de uso
+- Documentos tipo
+https://www.chilecompra.cl/nuevos-compradores/
+Procedimientos de compra desde
+diciembre de 2024
+Convenios Compra Licitación Licitación Trato Compra por
+Marco Ágil Pública Privada Directo Cotización
+1 2 3 4 5 6
+Procedimiento realizado Procedimiento para Procedimiento de Procedimiento que Procedimiento de Procedimiento fundado
+por ChileCompra que adquirir bienes y/o carácter concursal y se utiliza cuando contratación en el que por que abre un espacio de
+dispone un catálogo servicios por un monto abierto, que opera a una licitación las circunstancias de su negociación con mínimo
+para compras sobre igual o inferior a 100 través de un llamado pública no tiene adquisición o por la 3 cotizaciones cuando
+100 UTM UTM, previa solicitud público a proveedores, ofertas o dichas naturaleza misma del bien hay término de contrato
+de bienes y servicios de al menos tres entre los cuales se ofertas hubiesen o servicio, se realiza un anticipado (remanente
+estandarizados, cotizaciones, que selecciona la oferta sido declaradas acuerdo entre el menor a 1.000 UTM) o
+entregados por los deberá realizarse a más conveniente. inadmisibles. organismo y un proveedor contratos con extranjeros
+proveedores empresas locales de En este procedimiento en particular, sin la ejecutados fuera del país
+adjudicados en la menor tamaño. es obligatorio el uso de concurrencia de otros
+licitación de Convenio Bases Tipo en los proveedores, sujeto a las
+Marco. rubros disponibles. nuevas normas de
+publicidad de la ley
+Convenios marco
+• Adquisiciones de bienes y servicios estandarizados de
+demanda regular y transversal, obligatorio por montos
+superiores a 100 UTM. Para EMT, este monto puede ser menor.
+• Las Entidades deben consultar el Catálogo electrónico de
+Convenios Marco antes de otro procedimiento, salvo en
+Compra Ágil.
+• Bases deben incluir cláusulas de adjudicación por zonas
+geográficas para proveedores locales y considerar criterios
+inclusivos.
+A partir de junio de 2025, será obligatorio consultar catálogo de Economía Circular antes de
+considerar otro procedimiento
+Compra Ágil
+• Adquisición de bienes y/o servicios por un monto igual o inferior a
+100 UTM.
+• Previa solicitud de, al menos, 3 cotizaciones realizadas a través
+de Mercado Público. Aunque se hubiese obtenido un número menor
+de cotizaciones, la contratación puede llevarse a cabo.
+• Este tipo de compra deberá realizarse, como regla general, con
+empresas de menor tamaño (EMT o Mipyme). En caso de no
+recibir cotizaciones de EMT, Mercado Público notificará a empresas
+que no pertenezcan a esta categoría.
+No requiere de acto administrativo suscrito por la jefatura del servicio, solo
+emisión y aceptación de Orden de Compra (OC).
+Tipos de licitaciones públicas
+Plazo
+Tipo Licitación Seriedad de la Fiel
+Publicación
+Rango
+Pública Oferta Cumplimiento
+(Días corridos)
+L1 <100 5 NO NO
+Etapas y plazos
+de la licitación
+LE >=100 Y <1000 10 (5)* NO NO
+LP >=1000 Y <5000 20 (10)* NO SI
+LR >=5000 30 SI SI
+(*) Algunos plazos pueden ser reducidos a la mitad, para la contratación de
+bienes o servicios de simple y objetiva especificación.
+Garantías
+Tienen por objeto resguardar el correcto cumplimiento de las obligaciones contraídas por el
+proveedor
+Garantía de seriedad de la oferta Asegurar la mantención de la oferta hasta la suscripción del
+contrato
+(Art. 11, Ley 19.886, y art. 52 y 53. D. 661/2024 del M. de Hacienda)
+Garantía de fiel y oportuno Asegurar que el adjudicatario cumpla con las obligaciones
+contractuales en las formas, plazos y condiciones establecidos
+cumplimiento
+en las Bases.
+(Art. 11, Ley 19.886, y art. 121 al 124, D. 661/2024 del M. de Hacienda)
+Garantía por anticipo
+Resguardar los recursos por adelantado al adjudicatario,
+asegurando que serán utilizados íntegramente para los fines del
+(Art. 11, Ley 19.886, y art. 125, D. 661/2024 del M. de Hacienda)
+contrato
+Tipos de Garantías
+Garantías por Fiel Cumplimiento
+Garantías por Seriedad de la Garantías por Anticipo
+del Contrato
+Oferta
+Art. 52 y 53 D. 661/2024 del M. de
+Art. 121 al 124 D. 661/2024 del M. de Hacienda Art. 125 del D. 661/2024 del M. de Hacienda
+Hacienda
+Contrataciones sobre 1.000 UTM, o aquellas declaradas No será necesaria en contrataciones menores a
+En licitaciones superiores a 5.000 UTM y por
+ofertas riesgosas, alcanzará un 5% del precio final ofertado 1.000 UTM.
+razones de interés público.
+por el Adjudicatario.
+En prestación de servicios, asegura el pago de obligaciones
+Se devuelve en 10 días hábiles tras la recepción
+No excederá el 3% del monto de la licitación. laborales y sociales, vigente hasta 60 días hábiles tras
+conforme de bienes o servicios.
+finalizar el contrato.
+Las cauciones deben cubrir su valor total, y
+Contiene monto, plazo de vigencia mínima Las Bases para contratos de ejecución sucesiva pueden
+pueden usar los mismos instrumentos que la
+y tipo de moneda o unidad reajustable. vincular el valor de las garantías a etapas o hitos.
+garantía de cumplimiento.
+Las Bases deben aceptar cualquier La Garantía debe cumplir las mismas
+Puede otorgarse en varios instrumentos financieros que
+instrumento, que esté ajustado a lo que características que las demás, no restringir
+sumen el monto requerido, entregados física o
+indica la Ley N° 19.799 sobre documentos tipo, ser irrevocable y pagadera a la vista).
+electrónicamente.
+electrónicos.
+A través de esta se podrá hacer efectivo el cobro de multas
+y sanciones.
+7 Causales que fundamentan los
+Tratos Directos
+1 Si sólo existiere un único proveedor del bien o 7 Por la naturaleza de la negociación solo en
+servicio sobre 1.000 UTM debe publicarse 5 días antes los casos señalados en el número 7 del artículo
+la intención de compra. 71.
+Si no hubiere interesados o las ofertas se
+2 a) Reposición o complementación de equipamiento o
+hubiesen declarado inadmisibles, siempre que
+servicios accesorios.
+primero se hubiese concursado por licitación privada.
+b) Costo desproporcionado.
+3 En casos de emergencia, urgencia o imprevisto
+c) Consultorías claves y estratégicas en consideración
+especial de las facultades del Proveedor.
+Servicios de naturaleza confidencial o cuya
+4
+difusión puede afectar la seguridad o el interés d) Cuando pueda afectarse la seguridad e integridad
+nacional, determinados por ley.
+personal de las autoridades.
+Seguridad y confianza (solo para contrataciones
+5 e) Conocimiento público del proceso licitatorio.
+superiores a 1.000 UTM, no aplica causal bajo ese
+monto).
+6 Adquisiciones inferiores a 30 UTM que privilegien
+materias de alto impacto social.
+Artículo 8, 8 bis y 60 Ley 19.886 – Art. 71 y D. 661/2024
+del M. de Hacienda
+Trato Directo
+Causales que pierden vigencia con la publicación del Nuevo Reglamento
+•
+Contratación con gastos de representación.
+•
+Consultarías claves y estratégicas en consideración especial de las
+facultades del proveedor.
+•
+Prórroga de un contrato
+Por otro lado, según el art. 129 del Reglamento, se podrá aumentar el plazo de ejecución del contrato u
+OC, si así fuese previsto en las Bases, y si no fuese previsto, debe cumplir con los siguientes requisitos:
+• Si está previsto en las Bases de Licitación, mientras no alteren los elementos esenciales del contrato u
+OC inicial.
+• Si no está previsto, debe cumplir con estos requisitos:
+1. Que sea caso fortuito o fuerza mayor, debidamente calificado por la Entidad.
+2. Cambio de contratista inviable por inconvenientes significativos o aumento sustancial de costos de
+contratación.
+3. Variaciones estrictamente necesarias para la causa objetiva.
+4. Preservación del equilibrio financiero del contrato.
+Compra por cotización
+Es un procedimiento de contratación que, por la naturaleza del bien o servicio requerido
+para satisfacer una necesidad pública, permite negociar con proveedores a partir de al
+menos tres cotizaciones, sin cumplir los requisitos de licitación o propuesta pública/privada,
+según lo estipulado en el artículo 8 quáter. (art. 7°, numeral 2, Ley 19.886)
+Se puede aplicar en dos casos:
+1 2
+En contratos terminados En convenios de prestación de servicios
+anticipadamente por incumplimiento por celebrar con personas jurídicas
+u otras causales, siempre que el extranjeras que deban ejecutarse fuera
+remanente no exceda las 1.000 UTM. del territorio nacional
+Las circunstancias que justifiquen la aplicación de este procedimiento deberán constar en el respectivo acto
+administrativo fundado
+Nuevas disposiciones
+Desde el 12 de diciembre de 2024
+Plan Anual de Compras
+Declaración de Intereses y
+Patrimonio
+Informar Personas Jurídicas
+Nueva Ficha Comprador
+Receptoras de Fondos Públicos
+Nómina del personal
+Las Entidades deben registrar en el Sistema de Información al personal involucrado en cada
+procedimiento de contratación o ejecución contractual, indicando sus funciones, sin importar su
+calidad jurídica. El art. 13 del Reglamento individualiza a:
+1. Requirente de Compra
+2. Participantes de la Unidad de compra o equivalente
+3. Evaluador o comisión evaluadora
+4. Visador jurídico
+5. Administrador de contrato
+6. Firmante
+Art. 12 bis, Ley 19.886 y art. 13 y 14, D. 661/2024 del M. de Hacienda
+Nómina del personal
+Las personas contratadas a honorarios que cumplan funciones
+en los procedimientos de contratación y/o de ejecución contractual
+La CGR, la FNE y el
+tendrán la calidad de agente público, para todos los efectos
+Ministerio Público, tendrán
+legales.
+acceso a dicha información.
+La información de la
+El art. 14 del Reglamento exige que la jefatura superior emita, nómina no es de acceso
+antes del 31 de enero de cada año, una resolución identificando público.
+al personal de los numerales 2 y 5 de la lista, así como a quienes
+tengan perfil de Comprador o Supervisor en Mercado Público.
+Art. 12 bis, Ley 19.886 y art. 13 y 14, D. 661/2024 del M. de Hacienda
+Declaración de Intereses y
+Patrimonio
+Es un instrumento regulado por la Ley N° 20.880, que como objetivo garantiza la
+transparencia y visibilidad de las relaciones económicas y patrimoniales que podrían
+influir en la imparcialidad de un funcionario al tomar decisiones.
+La DIP se completa a través de https://declaracionjurada.cl/dip/ a más tardar 30 días
+después de asumida la función, y se renueva en el mes de septiembre y marzo de
+cada año.
+Todas aquellas personas individualizadas en la nómina de personal de cada
+organismo público, dispuesta en el Sistema de Información, deberán firmar la
+Declaración de Intereses y Patrimonio
+Art. 13, D. 661/2024 del M. de Hacienda
+Nueva Ficha Comprador
+¿Qué es? Es una ficha electrónica estandarizada y
+creada para cada entidad pública en Mercado
+Público y contiene información sobre:
+• Plan Anual de Compras (PAC)
+• Días promedio de pago
+• Reclamos de Proveedores
+• Recursos en su contra en el Tribunal de
+Compras Públicas
+• Registros de sus adquisiciones realizadas
+Art. 172, D. 661/2024 del M. de Hacienda
+Manual de Procedimientos de
+Adquisiciones y Gestión de Contratos
+Es un documento que detalla lineamientos, roles y
+responsabilidades para compras y contrataciones públicas,
+promoviendo transparencia, eficiencia y probidad en el uso de
+recursos. Debe ser publicado en Mercado Público, y forma parte de
+los antecedentes que regulan las compras y contrataciones
+del organismo.
+En el contexto de la entrada en vigencia de la Ley N° 21.634, que
+modifica la Ley N° 19.886, y la publicación del nuevo Reglamento
+de Compras, D. 661/2024, del M. de Hacienda, todas las
+instituciones deben publicar o actualizar el Manual.
+Art. 6, D. 661/2024, del M. de Hacienda
+Manual de Procedimientos de
+Adquisiciones y Gestión de Contratos
+Elementos que deben estar contenidos en este manual:
+• •
+Formulación de Bases. Organigrama de la Entidad y de las áreas involucradas en
+• el proceso de compra, con sus niveles y flujos, y sus
+Criterios y mecanismos de evaluación.
+mecanismos de control para garantizar probidad.
+•
+•
+Gestión de contratos y proveedores.
+Procedimiento para la custodia, mantención y vigencia de las
+•
+garantías, indicando los funcionarios encargados de dichas
+Recepción de bienes y servicios.
+funciones y la forma y oportunidad para informar al Jefe de
+•
+Procedimientos para el pago oportuno. Servicio su cumplimiento, sin perjuicio de la responsabilidad
+• de este.
+Política de inventarios.
+•
+• Herramientas para disminuir los costos administrativos
+Uso del Sistema de Información.
+de transacción de los procesos de compra y de gestión de
+•
+contratos.
+Autorizaciones que se requieran para las
+distintas etapas del proceso de compra.
+Art. 6, D. 661/2024, del M. de Hacienda
+Disposiciones de la Ley de Compra
+Nuevas funciones
+de ChileCompra
+1
+Regulación de beneficiarios
+Fortalecimiento del
+finales y estado de habilidad 2
+4
+Tribunal de Compras
+de proveedores
+Públicas (TCP)
+3
+Unión Temporal de
+Proveedores (UTP)
+Nuevas funciones de ChileCompra
+La Dirección de Compra y Contratación Pública
+(DCCP) podrá impartir instrucciones obligatorias
+de general aplicación, entre otras, conducentes a
+fortalecer la probidad, la transparencia y la
+eficiencia en los procedimientos de contratación
+Capítulo VII, art. 30, letra j,
+pública.
+Ley 19.886
+Fortalecimiento del Tribunal de
+Compras Públicas
+Busca perfeccionar el funcionamiento del Tribunal de Compras y
+Contratación Pública, ampliando su competencia al conocimiento de las
+acciones u omisiones ilegales o arbitrarias producidas durante:
+• Todos los procedimientos de contratación.
+• La ejecución de un contrato administrativo con los organismos señalados
+en los incisos segundo, tercero y quinto del art. 1° de la Ley 19.886.
+• Los procedimientos y acciones relativas al Registro de Proveedores
+realizadas por ChileCompra
+Además, el TCP es competente en aquellas acciones de nulidad contra los
+contratos celebrados por los órganos de la Administración del Estado, con
+infracción de las normas del Capítulo VII de la Ley 19.886.
+Registro de proveedores
+¿Qué es? Es la nómina de todas las personas naturales y jurídicas,
+chilenas y extranjeras, que NO tengan causal de inhabilidad para
+contratar con los organismos del Estado.
+Deberá individualizar a socios, accionistas, administradores y
+beneficiarios finales, así como registrar información sobre
+contratos adjudicados, ejecutados o terminados anticipadamente,
+multas, medidas sobre contratos en ejecución e inhabilidades
+conforme a la Ley de Compras y su reglamento.
+Art. 141, D.S. 661/2024 del M. de Hacienda
+Registro de Proveedores
+Categorías de empresas por tamaño
+Según lo dispuesto en el art. 2° de la Ley
+20.416:
+Según la clasificación de sus actividades
+• Micro empresa económicas, consultando a las fuentes oficiales
+• Pequeña empresa como el Servicio de Impuestos Internos (SII) u
+• Mediana empresa otra.
+• Gran Empresa
+• Extranjeros
+Art. 143 y 144, D.S. 661/2024 del M. de Hacienda
+¿Qué son los beneficiarios finales?
+Son aquellas personas naturales que También son aquellas donde existe una
+poseen, directa o indirectamente, a participación inferior al 10% del capital o de los
+través de sociedades u otros derechos a voto de una persona o estructura jurídica,
+mecanismos, una participación igual o a través de sociedades u otros mecanismos, ejerce
+mayor al 10% del capital o de los el control efectivo en la toma de decisiones de
+derechos a voto de una persona o la persona o estructura jurídica.
+estructura jurídica determinada
+Como proveedor estos beneficiarios finales deben ingresarse
+mediante declaración jurada que cada empresa debe actualizar
+en Registro de Proveedores en Mercado Público
+Registro de Proveedores
+Causales de inhabilidad
+Tendrán estado Hábil aquellos proveedores que cumplan con los requisitos para contratar con el Estado de
+acuerdo con las causales estipuladas en el Reglamento de Compras Públicas. Estas son:
+Art. 154, D. 661/2024 del M. de Hacienda
+Unión temporal de proveedores
+¿Qué es? Es un conjunto de EMT (sean personas naturales o jurídicas) que se unen
+para la presentación de una oferta en licitaciones o convenio marco, o para la
+suscripción de un contrato en contratación directa, sin que sea necesario
+constituir una sociedad. Su conformación es exclusiva para un proceso de compra
+en particular
+¿Cómo se constituye? mediante escritura pública, y para aquellos contrato
+menores a 1.000 UTM, por instrumento público o privado. En este, se deberá
+establecer la solidaridad entre los integrantes respectos de todas las obligaciones
+que con la Entidad Licitante, y el nombramiento de un representante común.
+Excepcionalmente, una UTP puede formarse sin límite de tamaño para contratos
+para la innovación o diálogos competitivos de innovación.
+En caso de inhabilidad durante la ejecución del contrato, el integrante inhábil podrá ser reemplazado por otro que
+cumpla los requisitos de las bases de licitación, propuesto por los demás integrantes de la unión.
+Art. 51 al 55, Ley 19.886; art. 180 al 184, D. 661/2024 del M. de Hacienda
+Procedimientos que entrarán
+en vigor en de junio de 2025
+Nuevos procedimientos de compra
+Diálogos Competitivos
+Creación de plataforma o
+catálogo Economía Circular
+Procedimiento competitivo que da
+Catálogo electrónico de productos a
+solución a una necesidad pública
+través del cual los organismos del Estado
+compleja donde es imprescindible el
+pueden transferir a otras instituciones
+diálogo o debate estructurado.
+bienes muebles en desuso.
+Subasta inversa electrónica Contratos para la Innovación
+Productos estandarizados de objetiva Procedimiento competitivo para
+especificación que no se encuentren satisfacer una necesidad respecto de
+disponibles en Convenio Marco vigente. los cuales no existen productos o
+servicios adecuados disponibles en el
+mercado.
+Recomendaciones
+Recomendaciones para
+mejores compras
+• Capacítate y certifica tus competencias Compras Públicas
+• Gestiona tus contratos en la plataforma de Mercado Público (obligatorio)
+• Promueve la asociatividad mediante Unión Temporal de Proveedores
+• Simplifica los procesos y no solicites documentación innecesaria
+• En materias de alto impacto social, potencia la participación de empresas lideradas por
+mujeres, las EMT, a los proveedores locales y la sustentabilidad ambiental
+¿Necesitas Ayuda?
+Centro de Ayuda: ayuda.mercadopublico.cl
+Material de apoyo Asistente Virtual
+Información para responder las Resuelve dudas derivando consultas a
+consultas más frecuentes de los material de apoyo del Centro de Ayuda.
+usuarios y acceder a material de También tiene opción de contacto con
+descarga como guías de uso, tutoriales ejecutivo para resolución en línea.
+en video e infografías.
+¿Prefieres Mesa de ayuda telefónica
+Ayuda
+600 7000 600 +56 2 2429 7709 IVR 24x7
+telefónica?
+Atención ejecutivo de lunes a viernes de 9 a 19 hrs.
+Capacítate en línea y de forma gratuita
+www.chilecompra.cl
+Capacitación on-line
+http://capacitacion.chilecompra.cl
+http://capacitacion.chilecompra.cl
+www.mercadopublico.cl
+Nuevo Reglamento de
+Compras Públicas
+Unidad de Formación y Capacitación Usuaria

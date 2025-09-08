@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollama Chat - Compras Públicas Chile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        
+        .status-connected {
+            background-color: #28a745;
+        }
+        
+        .status-disconnected {
+            background-color: #dc3545;
+        }
+        
+        .documents-info {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        
+        select, textarea, button {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        
+        select {
+            background-color: white;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+            font-family: Arial, sans-serif;
+        }
+        
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        button:disabled {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+        
+        .response-area {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            border-radius: 5px;
+            min-height: 150px;
+            white-space: pre-wrap;
+            display: none;
+            line-height: 1.6;
+        }
+        
+        .loading {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .error {
+            color: #dc3545;
+            background-color: #f8d7da;
+            border-left-color: #dc3545;
+        }
+        
+        .success {
+            color: #155724;
+            background-color: #d4edda;
+            border-left-color: #28a745;
+        }
+        
+        .examples {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .examples h3 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        
+        .examples ul {
+            margin-bottom: 0;
+        }
+        
+        .examples li {
+            margin-bottom: 5px;
+            cursor: pointer;
+            color: #0066cc;
+        }
+        
+        .examples li:hover {
+            text-decoration: underline;
+        }
+        
+        .context-info {
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏛️ Consultas Compras Públicas Chile</h1>
+        <div class="subtitle">Sistema de consultas basado en documentos oficiales con Ollama + Llama2</div>
+        
+        <div class="status-bar">
+            <div class="status-indicator">
+                <div class="status-dot" id="statusDot"></div>
+                <span id="statusText">Verificando conexión...</span>
+            </div>
+            <div class="documents-info" id="documentsInfo">
+                Documentos: Cargando...
+            </div>
+        </div>
+        
+        <div class="examples">
+            <h3>📝 Ejemplos de preguntas que puedes hacer:</h3>
+            <ul>
+                <li onclick="setQuestion('¿Qué es una licitación pública según la ley chilena?')">¿Qué es una licitación pública según la ley chilena?</li>
+                <li onclick="setQuestion('¿Cuáles son los procedimientos de compra disponibles?')">¿Cuáles son los procedimientos de compra disponibles?</li>
+                <li onclick="setQuestion('¿Qué documentos se requieren para participar en una licitación?')">¿Qué documentos se requieren para participar en una licitación?</li>
+                <li onclick="setQuestion('¿Cuáles son los montos para licitación pública vs trato directo?')">¿Cuáles son los montos para licitación pública vs trato directo?</li>
+                <li onclick="setQuestion('¿Qué cambios introduce el nuevo reglamento 2024?')">¿Qué cambios introduce el nuevo reglamento 2024?</li>
+            </ul>
+        </div>
+        
+        <form id="chatForm">
+            <div class="form-group">
+                <label for="questionInput">Tu consulta sobre compras públicas:</label>
+                <textarea id="questionInput" placeholder="Escribe tu pregunta sobre la legislación de compras públicas chilena..." required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" id="submitBtn">🔍 Consultar Documentos</button>
+            </div>
+        </form>
+        
+        <div id="responseArea" class="response-area">
+            <div id="contextInfo" class="context-info" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:5001';
+        let documentsLoaded = false;
+
+        // Verificar estado de la conexión y documentos
+        async function checkStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/status`);
+                const data = await response.json();
+                
+                updateStatus(data.ollama_connected, data.documents_loaded, data.document_count);
+                documentsLoaded = data.documents_loaded;
+                
+            } catch (error) {
+                console.error('Error checking status:', error);
+                updateStatus(false, false, 0);
+            }
+        }
+
+        // Actualizar indicadores de estado
+        function updateStatus(ollamaConnected, docsLoaded, docCount) {
+            const statusDot = document.getElementById('statusDot');
+            const statusText = document.getElementById('statusText');
+            const documentsInfo = document.getElementById('documentsInfo');
+            
+            if (ollamaConnected && docsLoaded) {
+                statusDot.className = 'status-dot status-connected';
+                statusText.textContent = 'Ollama conectado - Sistema listo';
+                documentsInfo.textContent = `Documentos: ${docCount} archivos cargados`;
+            } else if (ollamaConnected && !docsLoaded) {
+                statusDot.className = 'status-dot status-disconnected';
+                statusText.textContent = 'Ollama conectado - Documentos no cargados';
+                documentsInfo.textContent = 'Documentos: Error al cargar';
+            } else {
+                statusDot.className = 'status-dot status-disconnected';
+                statusText.textContent = 'Ollama desconectado';
+                documentsInfo.textContent = 'Documentos: No disponibles';
+            }
+        }
+
+        // Establecer pregunta de ejemplo
+        function setQuestion(question) {
+            document.getElementById('questionInput').value = question;
+        }
+
+        // Enviar pregunta al servidor Python
+        async function askQuestion(question) {
+            try {
+                const response = await fetch(`${API_BASE}/query`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ question: question })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                return data;
+                
+            } catch (error) {
+                console.error('Error asking question:', error);
+                throw error;
+            }
+        }
+
+        // Mostrar respuesta en la interfaz
+        function showResponse(data, type = 'success') {
+            const responseArea = document.getElementById('responseArea');
+            const contextInfo = document.getElementById('contextInfo');
+            
+            if (!responseArea) {
+                console.error('responseArea element not found');
+                return;
+            }
+            
+            if (type === 'success' && data && data.response) {
+                responseArea.innerHTML = `<strong>📖 Respuesta:</strong><br><br>${data.response}`;
+                
+                if (contextInfo && data.sources && data.sources.length > 0) {
+                    contextInfo.innerHTML = `<strong>📚 Fuentes consultadas:</strong><br>${data.sources.map(s => `• ${s.source} (relevancia: ${(s.similarity * 100).toFixed(1)}%)`).join('<br>')}`;
+                    contextInfo.style.display = 'block';
+                } else if (contextInfo) {
+                    contextInfo.style.display = 'none';
+                }
+            } else {
+                responseArea.textContent = typeof data === 'string' ? data : JSON.stringify(data);
+                if (contextInfo) {
+                    contextInfo.style.display = 'none';
+                }
+            }
+            
+            responseArea.className = `response-area ${type}`;
+            responseArea.style.display = 'block';
+        }
+
+        // Manejar envío del formulario
+        document.getElementById('chatForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const question = document.getElementById('questionInput').value;
+            const submitBtn = document.getElementById('submitBtn');
+            
+            if (!question.trim()) {
+                showResponse('Por favor escribe una pregunta.', 'error');
+                return;
+            }
+            
+            if (!documentsLoaded) {
+                showResponse('Sistema no disponible. Asegúrate de que Ollama esté ejecutándose y los documentos estén cargados.', 'error');
+                return;
+            }
+            
+            // Deshabilitar botón y mostrar loading
+            submitBtn.disabled = true;
+            submitBtn.textContent = '🔍 Consultando...';
+            showResponse('Buscando información en los documentos y generando respuesta...', 'loading');
+            
+            try {
+                const result = await askQuestion(question);
+                showResponse(result, 'success');
+            } catch (error) {
+                showResponse(`Error: No se pudo obtener una respuesta. ${error.message}`, 'error');
+            } finally {
+                // Rehabilitar botón
+                submitBtn.disabled = false;
+                submitBtn.textContent = '🔍 Consultar Documentos';
+            }
+        });
+
+        // Verificar estado al cargar la página y cada 10 segundos
+        window.addEventListener('load', function() {
+            checkStatus();
+            setInterval(checkStatus, 10000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LM Studio Chat Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        
+        select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        select {
+            background-color: white;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        button:disabled {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+        
+        .response-area {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            border-radius: 5px;
+            min-height: 100px;
+            white-space: pre-wrap;
+            display: none;
+        }
+        
+        .loading {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .error {
+            color: #dc3545;
+            background-color: #f8d7da;
+            border-left-color: #dc3545;
+        }
+        
+        .success {
+            color: #155724;
+            background-color: #d4edda;
+            border-left-color: #28a745;
+        }
+        
+        .model-info {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 LM Studio Chat Interface</h1>
+        
+        <form id="chatForm">
+            <div class="form-group">
+                <label for="modelSelect">Seleccionar Modelo:</label>
+                <select id="modelSelect" required>
+                    <option value="">Cargando modelos...</option>
+                </select>
+                <div class="model-info" id="modelInfo"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="questionInput">Tu pregunta:</label>
+                <textarea id="questionInput" placeholder="Escribe tu pregunta aquí..." required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" id="submitBtn">Enviar Pregunta</button>
+            </div>
+        </form>
+        
+        <div id="responseArea" class="response-area"></div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8080/api';
+        let availableModels = [];
+
+        // Cargar modelos disponibles al iniciar
+        async function loadModels() {
+            try {
+                const response = await fetch(`${API_BASE}/v1/models`);
+                const data = await response.json();
+                
+                availableModels = data.data;
+                const modelSelect = document.getElementById('modelSelect');
+                
+                // Limpiar opciones existentes
+                modelSelect.innerHTML = '';
+                
+                // Agregar opción por defecto
+                const defaultOption = document.createElement('option');
+                defaultOption.value = '';
+                defaultOption.textContent = 'Selecciona un modelo...';
+                modelSelect.appendChild(defaultOption);
+                
+                // Agregar modelos disponibles
+                availableModels.forEach(model => {
+                    const option = document.createElement('option');
+                    option.value = model.id;
+                    option.textContent = model.id;
+                    modelSelect.appendChild(option);
+                });
+                
+                // Mostrar información del modelo seleccionado
+                modelSelect.addEventListener('change', function() {
+                    const modelInfo = document.getElementById('modelInfo');
+                    if (this.value) {
+                        const selectedModel = availableModels.find(m => m.id === this.value);
+                        modelInfo.textContent = `Tipo: ${selectedModel.object} | Propietario: ${selectedModel.owned_by}`;
+                    } else {
+                        modelInfo.textContent = '';
+                    }
+                });
+                
+            } catch (error) {
+                console.error('Error loading models:', error);
+                const modelSelect = document.getElementById('modelSelect');
+                modelSelect.innerHTML = '<option value="">Error cargando modelos</option>';
+                showResponse('Error: No se pudieron cargar los modelos. Asegúrate de que LM Studio esté ejecutándose.', 'error');
+            }
+        }
+
+        // Enviar pregunta al modelo
+        async function askQuestion(model, question) {
+            const requestBody = {
+                model: model,
+                messages: [
+                    {
+                        role: "user",
+                        content: question
+                    }
+                ],
+                temperature: 0.7,
+                max_tokens: 1000,
+                stream: false
+            };
+
+            try {
+                const response = await fetch(`${API_BASE}/v1/chat/completions`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(requestBody)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                return data.choices[0].message.content;
+                
+            } catch (error) {
+                console.error('Error asking question:', error);
+                throw error;
+            }
+        }
+
+        // Mostrar respuesta en la interfaz
+        function showResponse(text, type = 'success') {
+            const responseArea = document.getElementById('responseArea');
+            responseArea.textContent = text;
+            responseArea.className = `response-area ${type}`;
+            responseArea.style.display = 'block';
+        }
+
+        // Manejar envío del formulario
+        document.getElementById('chatForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const model = document.getElementById('modelSelect').value;
+            const question = document.getElementById('questionInput').value;
+            const submitBtn = document.getElementById('submitBtn');
+            
+            if (!model || !question.trim()) {
+                showResponse('Por favor selecciona un modelo y escribe una pregunta.', 'error');
+                return;
+            }
+            
+            // Deshabilitar botón y mostrar loading
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
+            showResponse('Procesando tu pregunta...', 'loading');
+            
+            try {
+                const answer = await askQuestion(model, question);
+                showResponse(`Pregunta: ${question}\n\nRespuesta:\n${answer}`, 'success');
+            } catch (error) {
+                showResponse(`Error: No se pudo obtener una respuesta. ${error.message}`, 'error');
+            } finally {
+                // Rehabilitar botón
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Enviar Pregunta';
+            }
+        });
+
+        // Cargar modelos al iniciar la página
+        window.addEventListener('load', loadModels);
+    </script>
+</body>
+</html>
